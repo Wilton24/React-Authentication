@@ -1,0 +1,70 @@
+# ------------------------------------
+# 1. DEPENDENCIES (Common for both)
+# ------------------------------------
+
+# Ignore all 'node_modules' directories in both frontend and backend
+# These are generated when running 'npm install' and should not be tracked.
+frontend/node_modules/
+backend/node_modules/
+/node_modules
+
+
+# ------------------------------------
+# 2. BUILD/OUTPUT ARTIFACTS
+# ------------------------------------
+
+# REACT (Frontend Build)
+# Ignore the production build output
+frontend/build/
+frontend/dist/
+frontend/out/
+
+# NODE.JS (Backend/Server Build)
+# Ignore common Node/Express build output folders
+backend/dist/
+backend/build/
+backend/public/assets/  # If assets are generated here
+
+# ------------------------------------
+# 3. LOGS, CACHE, and DEBUG FILES
+# ------------------------------------
+
+# Node-specific logs/cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.eslintcache
+.stylelintcache
+/logs
+
+# Generic log files
+*.log
+
+# ------------------------------------
+# 4. ENVIRONMENT and SENSITIVE FILES
+# (CRITICAL TO IGNORE)
+# ------------------------------------
+
+# Ignore all environment files containing secrets (API keys, etc.)
+.env
+.env.local
+.env.*.local
+.DS_Store
+
+# ------------------------------------
+# 5. OS and EDITOR SPECIFIC FILES
+# ------------------------------------
+
+# macOS/OS X
+.DS_Store
+
+# VS Code
+.vscode/
+
+# IntelliJ/WebStorm/etc.
+.idea/
+
+# Windows
+Thumbs.db
