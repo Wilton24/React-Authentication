@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/M%C3%BCnchen_Panorama.JPG/1024px-M%C3%BCnchen_Panorama.JPG",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"A new event","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/M%C3%BCnchen_Panorama.JPG/1024px-M%C3%BCnchen_Panorama.JPG","date":"2022-10-01","description":"Some awesome event!","id":"2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"}],"users":[{"email":"fjsiduf@gg.com","password":"$2a$12$wzpgssTMFDB7w5JI5wzRWu3hzSD5X5lIzROnF0crvVthRr/mGzyPu","id":"8b68f66b-e1fa-4e90-8dc5-0a3c37e7b4e2"},{"email":"dfjwiejf@gg.com","password":"$2a$12$X7XQP5eW6HAIhB8.KgR7huYQvTzNwD5shYZySYoTP/27TxsDuW3a.","id":"35137c55-ee79-433f-9b70-221f13f844f7"},{"email":"cbasher24@gmail.com","password":"$2a$12$dNduG9Oa0duDSpyCnKWzOe/TAlBh60ZTvrVu4MWI/h/7nd.XuS3SG","id":"3caecf57-8d0e-414c-a909-7451de6b8c0f"},{"email":"sdfj@gg.com","password":"$2a$12$43fzX9kwvZx1UIFlnJvSK.K8EYBrBGKfsxJQ.YlnCMyZTa3XLVufG","id":"203daf68-0ec9-401d-9894-83261ffddca0"},{"email":"skjfi@gg.com","password":"$2a$12$XPtGGZRHYTFVQBAiO3m8tutiFAW0cp.hnMGPiy/7RhzSjsEo3KEQC","id":"2f5adf09-fdb1-4370-b8e3-dbb24373d880"}]}

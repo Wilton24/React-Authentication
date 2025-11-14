@@ -1,11 +1,15 @@
 const bodyParser = require('body-parser');
 const express = require('express');
+const PORT = process.env.PORT || 8080;
+const cors = require('cors');
+
 
 const eventRoutes = require('./routes/events');
 const authRoutes = require('./routes/auth');
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -24,4 +28,4 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message });
 });
 
-app.listen(8080);
+app.listen(PORT, () => console.log('App running on port ' + PORT));
