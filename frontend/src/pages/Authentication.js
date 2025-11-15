@@ -61,12 +61,12 @@ export async function action({ request, params }) {
   }
 
   const resData = await response.json();
-  const expirationTime = new Date(
-    new Date().getTime() + +resData.expiresIn * 1000
-  );
+  // const expirationTime = new Date(
+  //   new Date().getTime() + +resData.expiresIn * 1000
+  // );
 
-  localStorage.setItem('token', resData.idToken);
-  localStorage.setItem('expirationTime', expirationTime.toISOString());
+  localStorage.setItem('token', resData.token);
+  // localStorage.setItem('expirationTime', expirationTime.toISOString());
 
 
   return redirect('/');

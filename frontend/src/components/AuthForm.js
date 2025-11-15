@@ -9,13 +9,10 @@ function AuthForm() {
   const signup = searchParams.get("mode") === "login" ? "signup" : "login";
   const isSubmitting = navigation.state === 'submitting';
 
-  console.log(data);
-
-
   return (
     <>
       <Form method="post" className={classes.form}>
-        <h1>{signup === "login" ? "Log in" : "Create new user"}</h1>
+        <h1>{signup === "login" ? "Create new user" : "Log in"}</h1>
         {data && data.errors && <ul>
           {Object.values(data.errors).map(err =>
             <li key={err}>{err}
