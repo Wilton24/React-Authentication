@@ -54,18 +54,20 @@ export async function action({ request, params }) {
 
   if (response.status === 422 || response.status === 401) {
     return response;
-  }
+  };
 
-  // const resData = await response.json();
-  // const expirationTime = new Date(
-  //   new Date().getTime() + +resData.expiresIn * 1000
-  // );
-
-  // localStorage.setItem('token', resData.idToken);
-  // localStorage.setItem('expirationTime', expirationTime.toISOString());
   if (!response.ok) {
     throw new Error('Authentication failed!');
   }
+
+  const resData = await response.json();
+  const expirationTime = new Date(
+    new Date().getTime() + +resData.expiresIn * 1000
+  );
+
+  localStorage.setItem('token', resData.idToken);
+  localStorage.setItem('expirationTime', expirationTime.toISOString());
+
 
   return redirect('/');
 }
