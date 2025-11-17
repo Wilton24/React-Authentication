@@ -1,4 +1,4 @@
-import { Suspense, use, useEffect } from 'react';
+import { Suspense } from 'react';
 import {
   useRouteLoaderData,
   json,
